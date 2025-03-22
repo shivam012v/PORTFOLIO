@@ -172,35 +172,95 @@
                         }
                     }
                 </style>
-                
-                <section id="skills">
-                    <div class="skills-container">
-                        <h1 class="skills-heading">Professional Skills</h1>
-                
-                        <div class="skills-grid">
-                            <div class="skill-bar">
-                                <div class="skill-fill problem-solving">50%</div>
-                                <div class="skill-text">Problem Solving</div>
-                            </div>
-                
-                            <div class="skill-bar">
-                                <div class="skill-fill creativity">70%</div>
-                                <div class="skill-text">Creativity</div>
-                            </div>
-                
-                            <div class="skill-bar">
-                                <div class="skill-fill communication">70%</div>
-                                <div class="skill-text">Communication</div>
-                            </div>
-                
-                            <div class="skill-bar">
-                                <div class="skill-fill teamwork">90%</div>
-                                <div class="skill-text">Teamwork</div>
-                            </div>
-                        </div>
+            <style>
+                .skills-section {
+                    background-color: #000;
+                    color: #fff;
+                    padding: 40px 20px;
+                    text-align: left;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            
+                .skills-heading {
+                    font-size: 2.5rem;
+                    color: #fff;
+                    margin-bottom: 30px;
+                }
+            
+                .skills-line {
+                    width: 100%;
+                    max-width: 600px;
+                    margin: 15px 0;
+                }
+            
+                .skill-name {
+                    font-size: 1.2rem;
+                    margin-bottom: 5px;
+                }
+            
+                .skill-bar {
+                    width: 100%;
+                    background-color: rgba(255, 255, 255, 0.1);
+                    height: 10px;
+                    border-radius: 5px;
+                    position: relative;
+                    overflow: hidden;
+                }
+            
+                .skill-progress {
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    border-radius: 5px;
+                }
+            
+                .problem-solving { width: 50%; background: linear-gradient(90deg, #00eeff, #00bcd4); }
+                .creativity { width: 70%; background: linear-gradient(90deg, #00eeff, #ff5722); }
+                .communication { width: 70%; background: linear-gradient(90deg, #00eeff, #8bc34a); }
+                .teamwork { width: 90%; background: linear-gradient(90deg, #00eeff, #ffc107); }
+            
+                @media (max-width: 768px) {
+                    .skills-heading {
+                        font-size: 2rem;
+                    }
+                }
+            </style>
+            
+            <section class="skills-section">
+                <h1 class="skills-heading">Professional Skills</h1>
+            
+                <div class="skills-line">
+                    <div class="skill-name">Problem Solving - 50%</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress problem-solving"></div>
                     </div>
-                </section>
-                
+                </div>
+            
+                <div class="skills-line">
+                    <div class="skill-name">Creativity - 70%</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress creativity"></div>
+                    </div>
+                </div>
+            
+                <div class="skills-line">
+                    <div class="skill-name">Communication - 70%</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress communication"></div>
+                    </div>
+                </div>
+            
+                <div class="skills-line">
+                    <div class="skill-name">Teamwork - 90%</div>
+                    <div class="skill-bar">
+                        <div class="skill-progress teamwork"></div>
+                    </div>
+                </div>
+            </section>
+            
         <section id="Services">
             <div class="project">
                 <div class="container">
