@@ -308,6 +308,70 @@
 
         
 
+        <style>
+            body {
+                background-color: #000;  /* Black background for consistency */
+                color: #fff;
+                font-family: 'Arial', sans-serif;
+            }
+        
+            form {
+                background-color: #000; /* Form background matches the overall black theme */
+                border: 2px solid #00eeff;
+                border-radius: 15px;
+                padding: 30px;
+                width: 100%;
+                max-width: 400px;
+                margin: 50px auto; /* Center form horizontally */
+                box-shadow: 0 0 20px rgba(0, 238, 255, 0.5); /* Glow effect */
+            }
+        
+            input, textarea {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 15px;
+                border: 2px solid transparent;
+                border-radius: 10px;
+                background-color: #000; /* Input background */
+                color: #fff;
+                font-size: 1rem;
+                outline: none;
+                transition: border-color 0.3s ease;
+            }
+        
+            input::placeholder, textarea::placeholder {
+                color: rgba(255, 255, 255, 0.6);  /* Placeholder color */
+            }
+        
+            input:focus, textarea:focus {
+                border-color: #00eeff; /* Cyan border on focus */
+            }
+        
+            textarea {
+                height: 100px;
+                resize: none;  /* Prevent resizing to maintain form design */
+            }
+        
+            button {
+                width: 100%;
+                padding: 10px;
+                background-color: #00eeff;
+                border: none;
+                color: #000;  /* Black text for contrast */
+                font-size: 1.1rem;
+                font-weight: bold;
+                text-transform: uppercase;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            }
+        
+            button:hover {
+                background-color: #00bcd4;  /* Slightly darker cyan on hover */
+                box-shadow: 0 0 15px rgba(0, 238, 255, 0.7); /* Glow effect on hover */
+            }
+        </style>
+        
         <form>
             <input type="text" placeholder="Your Name">
             <input type="email" placeholder="Your Email">
