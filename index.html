@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html> -->
+<!--    <!DOCTYPE html> -->
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -27,6 +27,10 @@
                 <a href="#Skills" style="--i:3">Skills</a>
                 <a href="#Projects" style="--i:4">Projects</a>
                 <a href="#Contact" style="--i:5">Contact</a>
+                
+
+                
+
             </nav>
         </header>
 
@@ -44,10 +48,13 @@
                 </div>
 
                 <div class="home-sci">
-                    <a href="https://www.linkedin.com/in/arpit-verma-8a08bb319/"style="--i:7" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.linkedin.com/in/arpit-verma-18a865297/"><i class='bx bxl-linkedin'></i></a>
                     <a href="https://www.instagram.com/itachi_playz1/?igsh=MWt0dW9pdHAzYjczZg%3D%3D"style="--i:8" target="_blank"><i class='bx bxl-instagram' ></i></a>
                     
+
                     <a href="https://github.com/shivam012v"style="--i:10" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="av_resume.pdf" download class="btn-box">cv</a>
+                    
                 </div>
                 
             </div>
@@ -106,73 +113,94 @@
 
                     </div>
                 </div>
-
-                <div class="container2">
-                    <h1 class="heading1">Professional Skills</h1>
-                    <div class="radial-bars">
-                        <div class="radial-bar">
-                            <svg x="0px" y="0px" viewBox="0 0 200 200">
-                                <circle class="progress-bar" cx="100" cy="80" r="80"></circle>
-                                <circle class="path path-1" cx="100" cy="80" r="80"></circle>
-                            </svg>
-                            <div class="percentage">50%</div>
-                            <div class="text">Problem Solving</div>
-                        </div>
-
-                        <div class="radial-bar">
-                            <svg x="0px" y="0px" viewBox="0 0 200 200">
-                                <circle class="progress-bar" cx="100" cy="80" r="80"></circle>
-                                <circle class="path path-2" cx="100" cy="80" r="80"></circle>
-                            </svg>
-                            <div class="percentage">70%</div>
-                            <div class="text">Creativity</div>
-                        </div>
-
-                        <div class="radial-bar">
-                            <svg x="0px" y="0px" viewBox="0 0 200 200">
-                                <circle class="progress-bar" cx="100" cy="80" r="80"></circle>
-                                <circle class="path path-3" cx="100" cy="80" r="80"></circle>
-                            </svg>
-                            <div class="percentage">70%</div>
-                            <div class="text">Communication</div>
-                        </div>
-
-                        <div class="radial-bar">
-                            <svg x="0px" y="0px" viewBox="0 0 200 200">
-                                <circle class="progress-bar" cx="100" cy="80" r="80"></circle>
-                                <circle class="path path-4" cx="100" cy="80" r="80"></circle>
-                            </svg>
-                            <div class="percentage">90%</div>
-                            <div class="text">Teamwork</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="Projects">
-            <div id="portfolio" class="services">
-                <div class="main-text" id="serv">
-                    <h2>My <span>Projects</span></h2>
-                    <div class="serv-container">
-                        <div class="row">
-                            <img src="proj1.png">
-                            <div class="layer">
-                                <h5>Hangman guess the word </h5>
-                                <p>A hangman guess the word, make with python</p>
-
-                                
+                <style>
+                    .skills-container {
+                        padding: 50px 20px;
+                        text-align: center;
+                    }
+                
+                    .skills-heading {
+                        font-size: 2rem;
+                        margin-bottom: 20px;
+                        color: #333;
+                    }
+                
+                    .skills-grid {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                        gap: 20px;
+                        justify-items: center;
+                    }
+                
+                    .skill-bar {
+                        width: 100%;
+                        max-width: 300px;
+                        background-color: #e0e0e0;
+                        border-radius: 20px;
+                        overflow: hidden;
+                        padding: 5px;
+                    }
+                
+                    .skill-fill {
+                        height: 30px;
+                        border-radius: 20px;
+                        display: flex;
+                        align-items: center;
+                        padding-left: 10px;
+                        font-weight: bold;
+                        color: #fff;
+                    }
+                
+                    .problem-solving { width: 50%; background-color: #00bcd4; }
+                    .creativity { width: 70%; background-color: #ff5722; }
+                    .communication { width: 70%; background-color: #8bc34a; }
+                    .teamwork { width: 90%; background-color: #ffc107; }
+                
+                    .skill-text {
+                        margin-top: 10px;
+                        font-size: 1rem;
+                        color: #666;
+                    }
+                
+                    @media (max-width: 768px) {
+                        .skills-heading {
+                            font-size: 1.5rem;
+                        }
+                
+                        .skill-bar {
+                            max-width: 100%;
+                        }
+                    }
+                </style>
+                
+                <section id="skills">
+                    <div class="skills-container">
+                        <h1 class="skills-heading">Professional Skills</h1>
+                
+                        <div class="skills-grid">
+                            <div class="skill-bar">
+                                <div class="skill-fill problem-solving">50%</div>
+                                <div class="skill-text">Problem Solving</div>
+                            </div>
+                
+                            <div class="skill-bar">
+                                <div class="skill-fill creativity">70%</div>
+                                <div class="skill-text">Creativity</div>
+                            </div>
+                
+                            <div class="skill-bar">
+                                <div class="skill-fill communication">70%</div>
+                                <div class="skill-text">Communication</div>
+                            </div>
+                
+                            <div class="skill-bar">
+                                <div class="skill-fill teamwork">90%</div>
+                                <div class="skill-text">Teamwork</div>
                             </div>
                         </div>
-
-                        
-                            </div>
-                        </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
+                </section>
+                
         <section id="Services">
             <div class="project">
                 <div class="container">
@@ -200,7 +228,7 @@
                     <li><i class="bx bxs-phone-call" ></i>7827903032</li>
                 </div>
                 <div class="contact-icons">
-                    <a href="https://www.linkedin.com/in/arpit-verma-8a08bb319"style="--i:7" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.linkedin.com/in/arpit-verma-18a865297/"style="--i:7" target="_blank"><i class='bx bxl-linkedin'></i></a>
                     <a href="https://www.instagram.com/itachi_playz1/?igsh=MWt0dW9pdHAzYjczZg%3D%3D"style="--i:8" target="_blank"><i class='bx bxl-instagram' ></i></a>
                     
                     <a href="https://github.com/shivam012v"style="--i:10" target="_blank"><i class='bx bxl-github'></i></a>
@@ -218,6 +246,14 @@
         </div>
         <a href="#Home" class="top"><i class='bx bx-up-arrow-alt' ></i></a>
 
-        <script src="script.js"></script>
+        
+
+        <form>
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <textarea placeholder="Your Message"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        
     </body>  
 </html>
